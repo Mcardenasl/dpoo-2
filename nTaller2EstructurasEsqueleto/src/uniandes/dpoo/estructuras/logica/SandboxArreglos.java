@@ -374,15 +374,7 @@ public class SandboxArreglos
      */
     public boolean compararArregloEnteros( int[] otroArreglo )
     {
-    	if (arregloEnteros.length != otroArreglo.length) {
-            return false;
-        }
-        for (int i = 0; i < arregloEnteros.length; i++) {
-            if (arregloEnteros[i] != otroArreglo[i]) {
-                return false;
-            }
-        }
-        return true;
+    	return Arrays.equals(arregloEnteros, otroArreglo);
     }
 
     /**
